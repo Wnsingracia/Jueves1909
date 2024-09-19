@@ -1,0 +1,83 @@
+.contenedor
+{
+    background-color: violet;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-areas:"header    header    header"
+                        "nav       nav       nav"
+                        "section   section   ads"
+                        "foot      foot      foot"
+                        "rrss      rrss      rrss";
+}
+.contenedor .header
+{
+    background-color: aqua;
+    grid-column: header;
+}
+.contenedor .nav
+{
+    background-color: yellow;
+    grid-column: nav;
+}
+.contenedor .section
+{
+    background-color: aquamarine;
+    grid-column: section;
+}
+.contenedor .ads
+{
+    background-color: red;
+    grid-column: ads;
+}
+.contenedor .foot
+{
+    background-color: brown;
+    grid-column: foot;
+}
+.contenedor .rrss
+{
+    background-color: greenyellow;
+    grid-column: rrss;
+}
+.section
+{
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    justify-content: space-around;
+}
+.cont1
+{
+    background-color: aliceblue;
+    height: 100px;
+    width: 280px;
+}
+.cont2
+{
+    background-color: blue;
+    height: 100px;
+    width: 270px;
+    margin-left: 300px;
+    margin-top: -100px;
+    margin-bottom: 10px;
+}
+.ads
+{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+.ads .ads2
+{
+    background-color: azure;
+}
+.rrss
+{
+    display: grid;
+    grid-template-columns:3fr 3fr 3fr ;
+}
